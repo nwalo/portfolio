@@ -969,11 +969,6 @@ form button:hover{
     text-align: center;
     padding: 50px 0;
     margin-bottom: 0;
-    background-image: url("svgs/contact.png");
-    background-repeat: repeat;
-    background-position: center;
-    background-color: rgb(0, 0, 0, 0.3);
-    background-blend-mode: multiply;
   }
 
 }
@@ -999,17 +994,6 @@ form button:hover{
 
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 400px) {
-/* Styles */
-
-  #contact{
-    text-align: center;
-    padding: 50px 0;
-    margin-bottom: 0;
-    background-image: none;
-  }
-}
 
 /* FOOTER */
 
