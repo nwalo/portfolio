@@ -46,4 +46,20 @@ $(function(){
     vidShow.fadeIn()
   }, 2100);
 
+  $(".swap").on("click", function (){
+    $(".swap").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  $(".ex").on("click", function(){
+    $("#experience").removeClass("hide");
+    $(".skill-exp").fadeOut();
+    $("#experience").fadeIn(1000);
+  })
+
+  $(".sk").on("click", function(){
+    $("#experience").fadeOut(1000);
+    $(".skill-exp").fadeIn(1000);
+  })
+
 });

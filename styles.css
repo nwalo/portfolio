@@ -8,6 +8,7 @@ body{
   background-color: rgb(0, 0, 0);
   margin: 0 auto;
   padding: 0;
+  transition: 5s;
 }
 
 nav{
@@ -154,7 +155,7 @@ nav input, nav label{
   }
 
   nav button:hover{
-    background-color: rgb(0, 0, 0, .3);
+    background-color: rgb(0, 0, 0, 0.3);
     color: #ddd;
   }
 
@@ -232,6 +233,7 @@ nav input, nav label{
   border: 3px solid #d38525;
   border-radius: 10px;
   float: left;
+  transition: 1s;
 }
 
 #home img:hover{
@@ -249,7 +251,7 @@ nav input, nav label{
 /* ANIMATION */
 
 #home h1{
-  margin: 0
+  margin: 0;
   padding: 0;
   transform: translateX(5);
   width: 100%;
@@ -259,7 +261,7 @@ nav input, nav label{
   font-size: 2.5em;
   font-weight: 600;
   letter-spacing: 0.1em;
-  background-image: url("smoke.mp4");
+  background-image: url("smoke (1).mp4");
 }
 
 video{
@@ -560,13 +562,67 @@ h1 .first span:nth-child(10){
 
 /* SKILLS */
 
+.inline{
+  display: inline;
+  margin: 0 5%;
+  color: rgb(153, 152, 152);
+  cursor: pointer;
+}
+
+.active{
+  border-top: 2px solid #cc7f09;
+  color: #ddd;
+  font-weight: 600;
+}
+
+.swap{
+  padding: 10px 0;
+  margin: 10px;
+}
+
+#experience{
+  margin: 0 7%;
+}
+
+.experience{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.exp{
+  background-color: #cc7f09;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  position: absolute;
+  top: 7px;
+}
+
+.hide{
+  display: none;
+}
+
+h6{
+  display: inline-block;
+  margin: 0 5% 20px;
+  color: #d38525;
+}
+
+@media(max-width: 500px){
+  h6{
+    margin: 0 10% 20px;
+  }
+}
+
 #skills{
   display: flex;
   justify-content: space-around;
   text-align: center;
+  margin: 0 auto;
 }
 
 .skills{
+  width: 90%;
   margin: 100px auto 80px;
 }
 
@@ -628,13 +684,14 @@ h1 .first span:nth-child(10){
 .proj img{
   width: 450px;
   height: 300px;
-  border: 1px solid black;
+  border: 1px solid #d38525;
   border-radius: 7px;
   box-shadow: 0 5px 7px black;
+  transition: 1s ease-in;
 }
 
 .proj img:hover{
-  transform: scale(1.05);
+  transform: scale(1.1);
   box-shadow: 0 3px 7px black;
 }
 
@@ -644,13 +701,13 @@ h1 .first span:nth-child(10){
 
 #projects .proj a{
   color: rgb(0, 0, 0, 0.7);
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 600;
 }
 
 #projects .proj a:hover{
   color: #d38525;
-  font-size: 1.2em;
+  font-size: 1.05em;
 }
 
 #projects .proj i{
@@ -966,9 +1023,8 @@ form button:hover{
   }
 
   #contact{
-    text-align: center;
-    padding: 50px 0;
-    margin-bottom: 0;
+    background: none;
+    background-color: #faf9f0;
   }
 
 }
@@ -1085,3 +1141,4 @@ footer .fl-right i{
     transform: rotate(360deg);
   }
 }
+
